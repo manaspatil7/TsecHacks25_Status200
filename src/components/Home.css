@@ -1,0 +1,265 @@
+/* Overall container for "Home" component */
+.home {
+    min-height: calc(100vh - 120px); /* Adjust for Navbar (60px) + Footer (60px) */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    flex-direction: column;
+    background: linear-gradient(135deg, #283c86, #45a247);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Content container to separate profile and text */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* Add space between text and profile */
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap; /* Allow stacking on smaller screens */
+    margin-top: 1rem;
+}
+
+/* Text section */
+.text-section {
+    max-width: 500px;
+    padding: 2rem;
+    text-align: left;
+}
+
+/* Header */
+.text-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff;
+    line-height: 1.2;
+}
+
+/* Typing effect */
+.typing-effect {
+    font-size: 1.8rem;
+    color: #00aaff;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 2px solid #00aaff; /* Thinner cursor */
+    animation: typing 6s steps(30, end) infinite; /* Smooth typing, no glitch */
+}
+
+/* Typing effect animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Floating paragraph container */
+.floating-paragraph {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    transform: translateY(30px);
+}
+
+.floating-paragraph p {
+    font-size: 1.1rem;
+    color: #dcdcdc;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* On hover or animation trigger, apply border highlight and floating effect */
+.floating-paragraph:hover,
+.floating-paragraph.animate {
+    opacity: 1;
+    transform: translateY(0);
+    border-color: #00aaff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile section */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem; /* Space below image */
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center; /* Focus more on the head */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Call-to-action button */
+.cta-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 12px 25px; /* Slightly larger padding for a more refined look */
+    background-color: #00aaff;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px; /* More rounded corners */
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    transform: scale(1); /* Start at normal size */
+    line-height: 1.4; /* Ensures text inside button is vertically centered */
+}
+
+.cta-button:hover {
+    transform: scale(1.05); /* Slight scaling effect */
+    background-color: #007bb5; /* Darker shade on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    filter: brightness(1.1); /* Slightly brighten the button */
+}
+
+/* Resume button styling */
+.resume-button {
+    background-color: #ffb361; /* Bright and attention-grabbing color */
+    color: white;
+    font-size: 1.2rem;
+    padding: 14px 28px; /* Slightly larger padding for balance */
+    text-decoration: none;
+    border-radius: 30px; /* Rounded corners for a smooth look */
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    transform: scale(1); /* Start at normal size */
+    line-height: 1.4; /* Ensures text inside button is vertically centered */
+}
+
+.resume-button:hover {
+    transform: scale(1.05); /* Slight scaling effect */
+    background-color: #9a50e5; /* Darker shade on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    filter: brightness(1.1); /* Slightly brighten the button */
+}
+
+/* Work Experience button styling */
+.work-experience-button {
+    background-color: #ff5733; /* Vibrant color for visibility */
+    color: white;
+    font-size: 1.2rem;
+    padding: 14px 28px; /* Consistent padding */
+    text-decoration: none;
+    border-radius: 30px; /* Rounded corners */
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    transform: scale(1); /* Start at normal size */
+    line-height: 1.4; /* Ensures text inside button is vertically centered */
+}
+
+.work-experience-button:hover {
+    transform: scale(1.05); /* Slight scaling effect */
+    background-color: #e04f2d; /* Darker shade on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    filter: brightness(1.1); /* Slightly brighten the button */
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Contact info section */
+.contact-info-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.contact-info-container p {
+    font-size: 1.1rem;
+    color: #dcdcdc;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info-container a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.contact-info-container a:hover {
+    text-decoration: underline;
+}
+
+/* Resume button adjustments for mobile */
+@media (max-width: 768px) {
+    /* Stack content vertically on mobile */
+    .content-container {
+        flex-direction: column;
+        gap: 1.5rem; /* Add space between stacked items */
+        align-items: center;
+    }
+
+    /* Adjust profile pic size */
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Adjust text section */
+    .text-section h1 {
+        font-size: 2rem;
+    }
+
+    .typing-effect {
+        font-size: 1.5rem;
+    }
+
+    .floating-paragraph p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    /* Adjust resume button */
+    .resume-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+        background-color: #9a50e5;
+    }
+
+    /* Adjust work experience button */
+    .work-experience-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    /* Adjust button container for mobile */
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

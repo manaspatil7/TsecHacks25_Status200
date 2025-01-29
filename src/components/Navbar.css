@@ -1,0 +1,108 @@
+/* Navbar container */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #333;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Tangerine', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00aaff;
+    text-transform: uppercase;
+    /* No underlines or color changes on hover for the logo */
+}
+
+.logo-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the logo color */
+}
+
+/* Nav links */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00aaff;
+}
+
+/* Hamburger menu (hidden by default) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+/* Mobile menu (hidden by default) */
+.nav-links.mobile {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #333;
+    padding: 1rem 0;
+    z-index: 100;
+}
+
+.nav-links.mobile li {
+    margin: 1rem 0;
+}
+
+/* Show mobile menu when active */
+.navbar.active .nav-links.mobile {
+    display: flex;
+}
+
+/* Hamburger icon animation when active */
+.navbar.active .hamburger div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar.active .hamburger div:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar.active .hamburger div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Make navbar responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide default nav links */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger menu */
+    }
+}

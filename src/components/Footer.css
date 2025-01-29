@@ -1,0 +1,60 @@
+/* Footer container */
+.footer {
+    text-align: center;
+    padding: 1.5rem 2rem; /* Increased padding for better spacing */
+    background: linear-gradient(135deg, #1d1d1d, #2c2c2c); /* Dark gradient for a sleek look */
+    color: #dcdcdc; /* Softer white text for better readability */
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+}
+
+/* Footer text */
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #bfbfbf; /* Muted color for the text */
+    line-height: 1.5;
+}
+
+/* Social links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Increased spacing between icons */
+    margin-top: 1rem; /* Better separation from the text */
+}
+
+.social-links a {
+    color: #00aaff;
+    text-decoration: none;
+    font-size: 1.2rem; /* Slightly larger font for better visibility */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-links a:hover {
+    color: #ffb361; /* Highlighted color for hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+    text-decoration: none; /* Keeps the text clean */
+}
+
+/* Social icons (optional, if using icons) */
+.social-links a i {
+    font-size: 1.5rem;
+}
+
+/* Footer responsive adjustments */
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        gap: 0.8rem; /* Reduced gap for compact layout */
+    }
+
+    .footer p {
+        font-size: 0.85rem; /* Adjust text size for smaller screens */
+    }
+
+    .social-links a {
+        font-size: 1rem; /* Slightly smaller links on mobile */
+    }
+}

@@ -1,0 +1,209 @@
+/* Section container */
+.sectionClass {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #283c86, #45a247);
+    color: white;
+}
+
+/* Section title */
+.sectiontitle {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sectiontitle h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #eaf5c7;
+    margin-bottom: 10px;
+    letter-spacing: 1px; /* Slight spacing for a cleaner look */
+}
+
+.headerLine {
+    width: 160px;
+    height: 3px;
+    background: #00aaff;
+    margin: 0 auto;
+}
+
+/* Timeline container */
+.cbp_tmtimeline {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cbp_tmtimeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #00aaff;
+    left: 50%;
+    margin-left: -2px;
+}
+
+/* Timeline item */
+.cbp_tmtimeline > li {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.cbp_tmtimeline > li:last-child {
+    margin-bottom: 0;
+}
+
+.cbp_tmlabel {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    position: relative;
+    width: 40%;
+    margin-left: 55%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    line-height: 1.6; /* Improved line height for better readability */
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+    margin-left: 5%;
+    text-align: left;
+}
+
+.cbp_tmlabel h3 {
+    margin: 0 0 10px;
+    font-size: 1.7rem;
+    color: #eaf5c7;
+    letter-spacing: 0.5px; /* Slight letter spacing for better legibility */
+}
+
+.cbp_tmlabel h4 {
+    font-size: 1.3rem;
+    color: #04ffc0;
+    margin: 0 0 15px;
+    font-weight: 500;
+}
+
+.cbp_tmlabel .date {
+    font-size: 1rem;
+    color: #bdd0db;
+    margin-bottom: 15px;
+    display: block;
+    font-style: oblique;
+}
+
+.cbp_tmlabel p {
+    font-size: 1.1rem;
+    color: #dcdcdc;
+    line-height: 1.6;
+    letter-spacing: 0.5px; /* Slight spacing for easier reading */
+}
+
+/* Icon styling */
+.cbp_tmicon {
+    width: 50px;
+    height: 50px;
+    background: #00aaff;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cbp_tmicon img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.cbp_tmlabel:hover,
+.cbp_tmicon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+    .cbp_tmtimeline:before {
+        left: 30px;
+    }
+
+    .cbp_tmlabel {
+        width: calc(100% - 60px);
+        margin-left: 40px;
+    }
+
+    .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+        margin-left: 40px;
+    }
+
+    .cbp_tmicon {
+        left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sectiontitle h2 {
+        font-size: 2rem;
+    }
+
+    .headerLine {
+        width: 120px;
+    }
+
+    .cbp_tmtimeline:before {
+        left: 15px;
+    }
+
+    .cbp_tmlabel {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        font-size: 0.9rem;
+    }
+
+    .cbp_tmlabel h3 {
+        font-size: 1.3rem;
+    }
+
+    .cbp_tmlabel h4 {
+        font-size: 1.1rem;
+    }
+
+    .cbp_tmicon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sectiontitle h2 {
+        font-size: 1.5rem;
+    }
+
+    .headerLine {
+        width: 80px;
+    }
+
+    .cbp_tmicon {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .cbp_tmlabel {
+        padding: 15px;
+    }
+
+    .cbp_tmlabel p {
+        font-size: 0.9rem;
+    }
+}
