@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import './Home.css';
 import profilePic from '../assets/profile-pic.jpg';
@@ -36,9 +37,9 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="button-container">
-                        <a href="/contact" className="cta-button">Get In Touch</a>
+                        <Link to="/contact" className="cta-button">Get In Touch</Link>
                         <a href="https://drive.google.com/file/d/1VKPwQdeOntnvG_-DFGm98YkcHnTCccF8/view" target="_blank" rel="noreferrer" className="cta-button resume-button">View Resume</a>
-                        <a href="/work-experience" className="cta-button work-experience-button">Work Experience</a> {/* New Work Experience button */}
+                        <Link to="/work-experience" className="cta-button work-experience-button">Work Experience</Link>
                     </div>
                     {/* New Email and Phone container */}
                     <div className="contact-info-container">
