@@ -12,7 +12,7 @@ const Home = () => {
                 </div>
 
                 <div className="text-section">
-                    <h1>Seasoned Business Head</h1>
+                    <h1>Strategic Business Counsultant</h1>
                     <div className="typing-effect">
                         <Typewriter
                             options={{
@@ -31,8 +31,8 @@ const Home = () => {
                     </div>
                     <div className="floating-paragraph">
                         <p>
-                            Visionary leader with proven expertise in driving business growth, operational excellence, and strategic initiatives. 
-                            Skilled in relationship management, innovative marketing strategies, and financial acumen to lead organizations towards sustained success.
+                            Visionary business consultant with over three decades of leadership experience in driving strategic transformation, operational excellence, and international expansion.
+                            Renowned for crafting high-impact growth strategies, Nitin S. Patil blends deep expertise in digital transformation, export development, and ERP implementation to elevate organizational performance. Adept in market diversification, channel development, and sales optimization, he partners with businesses to unlock profitability, streamline operations, and navigate complex market dynamics with clarity and purpose.
                         </p>
                     </div>
                     <div className="button-container">
