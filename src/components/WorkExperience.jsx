@@ -4,14 +4,14 @@ import "./WorkExperience.css";
 const WorkExperience = () => {
     const experiences = [
         
-        {
-         "role": "Strategic Business Consultant",
-         "company": "Freelance Consultant",
-         "duration": "Feb 2025 - Present",
-        "description": "A seasoned Strategic Business Consultant with over 30 years of experience leading business transformation and sustainable growth across diverse industries. Specializing in enabling organizations to scale through integrated solutions encompassing digital marketing, social media engagement, global market expansion, and operational optimization. Adept at driving profitability through innovative strategies that enhance digital presence, streamline sales processes, and optimize business operations via ERP implementation and process reengineering. My consulting expertise lies in uncovering untapped market segments, developing multi-channel distribution models, and unlocking export potential to fuel topline growth. Currently providing strategic consulting to M/s Delta PD Pumps Pvt. Ltd., helping transform market challenges into significant growth opportunities. Additionally, played a pivotal role in guiding M/s Bhavya Steel in developing their export business in the Middle East & Africa."
-        },
-
         
+        {
+            role: "Strategic Business Consultant",
+            company: "M/s Delta PD Pumps Pvt. Ltd. – Mumbai, India",
+            duration: "Feb 2025 - Present",
+            description:
+                "AS seasoned Strategic Business Consultant with over many years of experience leading business transformation and sustainable growth across diverse industries. Specializing in enabling organizations to scale through integrated solutions encompassing digital marketing, social media engagement, global market expansion, and operational optimization. Adept at driving profitability through innovative strategies that enhance digital presence, streamline sales processes, and optimize business operations via ERP implementation and process reengineering. My consulting expertise lies in uncovering untapped market segments, developing multi-channel distribution models, and unlocking export potential to fuel topline growth. Currently providing strategic consulting to M/s Delta PD Pumps Pvt. Ltd., helping transform market challenges into significant growth opportunities. Additionally, played a pivotal role in guiding M/s Bhavya Steel in developing their export business in the Middle East & Africa.",
+        },
         {
             role: "Business Head",
             company: "HYDAC India Pvt. Ltd. – Mumbai, India A GERMAN MNC",
