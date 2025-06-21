@@ -31,8 +31,8 @@ const Home = () => {
                     </div>
                     <div className="floating-paragraph">
                         <p>
-                            Visionary business consultant with over three decades of leadership experience in driving strategic transformation, operational excellence, and international expansion.
-                            Renowned for crafting high-impact growth strategies, Nitin S. Patil blends deep expertise in digital transformation, export development, and ERP implementation to elevate organizational performance. Adept in market diversification, channel development, and sales optimization, he partners with businesses to unlock profitability, streamline operations, and navigate complex market dynamics with clarity and purpose.
+                            Visionary business consultant with 30+ years of experience in strategic transformation, operational excellence, and global expansion.
+                            Blends expertise in digital transformation, export development, and ERP implementation to drive growth, streamline operations, and navigate complex market dynamics with clarity and impact.
                         </p>
                     </div>
                     <div className="button-container">
